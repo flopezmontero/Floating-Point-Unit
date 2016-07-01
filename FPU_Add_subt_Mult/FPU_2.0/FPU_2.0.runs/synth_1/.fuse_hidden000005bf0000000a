@@ -1,0 +1,80 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Mon Apr 25 06:09:23 2016
+# Process ID: 3919
+# Current directory: /media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.runs/synth_1
+# Command line: vivado -log Sgf_Multiplication.vds -mode batch -messageDb vivado.pb -notrace -source Sgf_Multiplication.tcl
+# Log file: /media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.runs/synth_1/Sgf_Multiplication.vds
+# Journal file: /media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source Sgf_Multiplication.tcl -notrace
+Command: synth_design -top Sgf_Multiplication -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1014.891 ; gain = 170.672 ; free physical = 394 ; free virtual = 2751
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Sgf_Multiplication' [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Sgf_Multiplication.v:23]
+	Parameter SW bound to: 24 - type: integer 
+	Parameter half bound to: 12 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'multiplier' [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/multiplier.v:23]
+	Parameter W bound to: 12 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'multiplier' (1#1) [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/multiplier.v:23]
+INFO: [Synth 8-638] synthesizing module 'adder' [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/adder.v:23]
+	Parameter W bound to: 12 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'adder' (2#1) [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/adder.v:23]
+INFO: [Synth 8-638] synthesizing module 'multiplier__parameterized0' [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/multiplier.v:23]
+	Parameter W bound to: 13 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'multiplier__parameterized0' (2#1) [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/multiplier.v:23]
+INFO: [Synth 8-638] synthesizing module 'RegisterMult' [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/RegisterMult.v:21]
+	Parameter W bound to: 25 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'RegisterMult' (3#1) [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/RegisterMult.v:21]
+INFO: [Synth 8-638] synthesizing module 'RegisterMult__parameterized0' [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/RegisterMult.v:21]
+	Parameter W bound to: 27 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'RegisterMult__parameterized0' (3#1) [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/RegisterMult.v:21]
+INFO: [Synth 8-638] synthesizing module 'substractor' [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/substractor.v:23]
+	Parameter W bound to: 27 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'substractor' (4#1) [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/substractor.v:23]
+INFO: [Synth 8-638] synthesizing module 'adder__parameterized0' [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/adder.v:23]
+	Parameter W bound to: 50 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'adder__parameterized0' (4#1) [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/adder.v:23]
+WARNING: [Synth 8-689] width (52) of port connection 'Data_B_i' does not match port width (50) of module 'adder__parameterized0' [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Sgf_Multiplication.v:140]
+WARNING: [Synth 8-689] width (50) of port connection 'Data_S_o' does not match port width (51) of module 'adder__parameterized0' [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Sgf_Multiplication.v:141]
+INFO: [Synth 8-638] synthesizing module 'RegisterMult__parameterized1' [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/RegisterMult.v:21]
+	Parameter W bound to: 49 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'RegisterMult__parameterized1' (4#1) [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/RegisterMult.v:21]
+WARNING: [Synth 8-689] width (50) of port connection 'D' does not match port width (49) of module 'RegisterMult__parameterized1' [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Sgf_Multiplication.v:152]
+WARNING: [Synth 8-689] width (50) of port connection 'Q' does not match port width (49) of module 'RegisterMult__parameterized1' [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Sgf_Multiplication.v:153]
+INFO: [Synth 8-256] done synthesizing module 'Sgf_Multiplication' (5#1) [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Sgf_Multiplication.v:23]
+WARNING: [Synth 8-3917] design Sgf_Multiplication has port Overflow_mult_o driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1054.273 ; gain = 210.055 ; free physical = 353 ; free virtual = 2711
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1054.273 ; gain = 210.055 ; free physical = 353 ; free virtual = 2711
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.srcs/constrs_1/new/Time_Constrains.xdc]
+Finished Parsing XDC File [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.srcs/constrs_1/new/Time_Constrains.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1352.711 ; gain = 0.000 ; free physical = 171 ; free virtual = 2529
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3930 

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Fri Mar 18 15:18:35 2016
+# Process ID: 2905
+# Current directory: /home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/proyecto_vivado_jeffry/sine_cosine_cordic/sine_cosine_cordic.sim/sim_1/behav
+# Command line: wbtcv -mode batch -source /home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/proyecto_vivado_jeffry/sine_cosine_cordic/sine_cosine_cordic.sim/sim_1/behav/xsim.dir/Sine_Cosine_CORDIC_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/proyecto_vivado_jeffry/sine_cosine_cordic/sine_cosine_cordic.sim/sim_1/behav/webtalk.log
+# Journal file: /home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/proyecto_vivado_jeffry/sine_cosine_cordic/sine_cosine_cordic.sim/sim_1/behav/webtalk.jou
+#-----------------------------------------------------------
+source /home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/proyecto_vivado_jeffry/sine_cosine_cordic/sine_cosine_cordic.sim/sim_1/behav/xsim.dir/Sine_Cosine_CORDIC_tb_behav/webtalk/xsim_webtalk.tcl -notrace

@@ -1,0 +1,91 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/RTL/Zero_Decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Zero_AS_Decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/RTL/Universal_Shift_Register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Universal_Shift_Register
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/RTL/Shift_Module_Param.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Shift_Module_Param
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/RTL/RegisterAdd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterAdd
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/RTL/Multiplexer_AC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_AC
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/RTL/Invert_Sign.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Invert_Sign
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/RTL/Greater_Comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Greater_Comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/RTL/Decoder_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoder_4_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/RTL/Comparator_Less.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator_Less
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/RTL/Comparator_Equal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator_Equal
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/RTL/add_sub_carry_out.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_sub_carry_out
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/RTL/add_subtract.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_subtract
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/testbench_jeffry/RTL_SIM/RTL_sine_cosine/counter_d.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_d
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/RTL/Zero_InfAdd_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Zero_InfAdd_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/RTL/Third_Phase.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Third_Phase
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/RTL/Tenth_Phase.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Tenth_Phase
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/RTL/Sixth_Phase.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sixth_Phase
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/testbench_jeffry/RTL_SIM/RTL_sine_cosine/Simple_Subt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Simple_Subt
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/testbench_jeffry/RTL_SIM/RTL_sine_cosine/sign_inverter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sign_inverter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/RTL/Seventh_Phase.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Seventh_Phase
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/RTL/Second_Phase.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Second_Phase
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/testbench_jeffry/RTL_SIM/RTL_sine_cosine/Op_Select.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Op_Select
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/testbench_jeffry/RTL_SIM/RTL_sine_cosine/Mux_3x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_3x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/testbench_jeffry/RTL_SIM/RTL_sine_cosine/Mux_2x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_2x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/RTL/FSM_Add_Subtract.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_Add_Subtract
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/RTL/Fourth_Phase.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Fourth_Phase
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/RTL/First_Phase.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module First_Phase
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/RTL/Fifth_Phase.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Fifth_Phase
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/RTL/Eight_N_Phase.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Eight_N_Phase
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/RTL/Eight_NE_Phase.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Eight_NE_Phase
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/testbench_jeffry/RTL_SIM/RTL_sine_cosine/d_ff_en.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module d_ff_en
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/testbench_jeffry/RTL_SIM/RTL_sine_cosine/CORDIC_FSM_v2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CORDIC_FSM_v2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/RTL/FPU_Add_Subtract_Function.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FPU_Add_Subtract_Function
+INFO: [VRFC 10-2458] undeclared symbol load_9, assumed default net type wire [/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/RTL/FPU_Add_Subtract_Function.v:146]
+INFO: [VRFC 10-2458] undeclared symbol load_10, assumed default net type wire [/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/RTL/FPU_Add_Subtract_Function.v:147]
+INFO: [VRFC 10-2458] undeclared symbol load_11, assumed default net type wire [/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/RTL/FPU_Add_Subtract_Function.v:150]
+INFO: [VRFC 10-2458] undeclared symbol load_18, assumed default net type wire [/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/RTL/FPU_Add_Subtract_Function.v:158]
+INFO: [VRFC 10-2458] undeclared symbol load_19, assumed default net type wire [/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/RTL/FPU_Add_Subtract_Function.v:160]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/testbench_jeffry/RTL_SIM/RTL_sine_cosine/CORDIC_Coprocessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CORDIC_Coprocessor
+WARNING: [VRFC 10-159] /* in comment [/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/testbench_jeffry/RTL_SIM/RTL_sine_cosine/CORDIC_Coprocessor.v:284]
+WARNING: [VRFC 10-159] /* in comment [/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/testbench_jeffry/RTL_SIM/RTL_sine_cosine/CORDIC_Coprocessor.v:357]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/testbench_jeffry/RTL_SIM/RTL_sine_cosine/Sine_Cosine_CORDIC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sine_Cosine_CORDIC
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/testbench_jeffry/RTL_SIM/RTL_sine_cosine/univ_bin_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module univ_bin_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/testbench_jeffry/RTL_SIM/RTL_sine_cosine/CORDIC_FSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CORDIC_FSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/testbench_jeffry/RTL_SIM/RTL_sine_cosine/counter_up.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module counter_up
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/testbench_jeffry/RTL_SIM/testbench/Sine_Cosine_CORDIC_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sine_Cosine_CORDIC_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/testbench_jeffry/RTL_SIM/testbench/CORDIC_FSM_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CORDIC_FSM_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/testbench_jeffry/RTL_SIM/testbench/CORDIC_FSM_v2_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CORDIC_FSM_v2_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jeffryqf/Dropbox/Proyecto_De_Graduacion/Proyecto_De_Graduacion_2/Proyecto_De_Graduacion/proyecto_vivado_jeffry/sine_cosine_cordic/sine_cosine_cordic.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

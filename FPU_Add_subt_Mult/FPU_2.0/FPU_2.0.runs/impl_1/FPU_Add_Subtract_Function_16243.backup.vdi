@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Wed Apr  6 07:14:21 2016
+# Process ID: 16243
+# Current directory: /media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.runs/impl_1
+# Command line: vivado -log FPU_Add_Subtract_Function.vdi -applog -messageDb vivado.pb -mode batch -source FPU_Add_Subtract_Function.tcl -notrace
+# Log file: /media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.runs/impl_1/FPU_Add_Subtract_Function.vdi
+# Journal file: /media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source FPU_Add_Subtract_Function.tcl -notrace
+
+*** Halting run - EA reset detected ***
+
+
+
+    while executing
+"start_step init_design"
+    (file "FPU_Add_Subtract_Function.tcl" line 50)
+INFO: [Common 17-206] Exiting Vivado at Wed Apr  6 07:14:29 2016...

@@ -1,0 +1,4 @@
+
+*** Running vivado
+    with args -log Sgf_Multiplication.vds -m64 -mode batch -messageDb vivado.pb -notrace -source Sgf_Multiplication.tcl
+

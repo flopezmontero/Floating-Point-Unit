@@ -1,0 +1,1172 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Thu May  5 07:13:10 2016
+# Process ID: 23734
+# Current directory: /media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/TXTVerification
+# Command line: vivado
+# Log file: /media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/TXTVerification/vivado.log
+# Journal file: /media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/TXTVerification/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.4/data/ip'.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:15 . Memory (MB): peak = 5781.316 ; gain = 120.453 ; free physical = 264 ; free virtual = 2778
+reset_run synth_1
+reset_run synth_1
+launch_runs synth_1
+[Thu May  5 07:14:45 2016] Launched synth_1...
+Run output will be captured here: /media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.runs/synth_1/runme.log
+launch_runs impl_1
+[Thu May  5 07:16:19 2016] Launched impl_1...
+Run output will be captured here: /media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream
+[Thu May  5 07:18:07 2016] Launched impl_1...
+Run output will be captured here: /media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.4
+  **** Build date : Nov 18 2015-09:53:32
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210274591798A
+set_property PROGRAM.FILE {/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.runs/impl_1/FPU_UART.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.runs/impl_1/FPU_UART.bit} [lindex [get_hw_devices] 0]
+program_hw_devices -disable_eos_check [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+close_hw_target {localhost:3121/xilinx_tcf/Digilent/210274591798A}
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Digilent/210274591798A
+disconnect_hw_server localhost:3121
+close_hw
+launch_simulation -mode post-implementation -type timing
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [Netlist 29-17] Analyzing 122 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/TXTVerification/.Xil/Vivado-23734-francis-Aspire-E1-570/dcp/FPU_UART.xdc]
+Finished Parsing XDC File [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/TXTVerification/.Xil/Vivado-23734-francis-Aspire-E1-570/dcp/FPU_UART.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.34 ; elapsed = 00:00:00.34 . Memory (MB): peak = 6092.676 ; gain = 3.000 ; free physical = 570 ; free virtual = 2491
+Restored from archive | CPU: 0.350000 secs | Memory: 3.060333 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.34 ; elapsed = 00:00:00.34 . Memory (MB): peak = 6092.676 ; gain = 3.000 ; free physical = 570 ; free virtual = 2491
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 6230.082 ; gain = 362.832 ; free physical = 445 ; free virtual = 2370
+INFO: [USF-XSim-32] Writing simulation netlist file for design 'impl_1'...
+INFO: [USF-XSim-92] write_verilog -mode timesim -nolib -sdf_anno true -force -file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.sim/sim_1/impl/timing/Testbench_uart_time_impl.v"
+write_verilog: Time (s): cpu = 00:00:25 ; elapsed = 00:00:12 . Memory (MB): peak = 6301.234 ; gain = 68.363 ; free physical = 320 ; free virtual = 2263
+INFO: [USF-XSim-33] Writing SDF file...
+INFO: [USF-XSim-93] write_sdf -mode timesim -process_corner slow -force -file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.sim/sim_1/impl/timing/Testbench_uart_time_impl.sdf"
+write_sdf: Time (s): cpu = 00:00:16 ; elapsed = 00:00:15 . Memory (MB): peak = 6613.504 ; gain = 304.270 ; free physical = 30 ; free virtual = 1944
+INFO: [USF-XSim-34] Netlist generated:/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.sim/sim_1/impl/timing/Testbench_uart_time_impl.v
+INFO: [USF-XSim-35] SDF generated:/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.sim/sim_1/impl/timing/Testbench_uart_time_impl.sdf
+INFO: [USF-XSim-37] Inspecting design source files for 'Testbench_uart' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported '/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.sim/sim_1/impl/timing/Hexadecimal_B.txt'
+INFO: [USF-XSim-25] Exported '/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.sim/sim_1/impl/timing/Hexadecimal_A.txt'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.sim/sim_1/impl/timing'
+xvlog -m64 --relax -prj Testbench_uart_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.sim/sim_1/impl/timing/Testbench_uart_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder_Round
+INFO: [VRFC 10-311] analyzing module Barrel_Shifter_M
+INFO: [VRFC 10-311] analyzing module Coun_Baud
+INFO: [VRFC 10-311] analyzing module Exp_Operation_m
+INFO: [VRFC 10-311] analyzing module FPU_Multiplication_Function
+INFO: [VRFC 10-311] analyzing module FPU_UART
+INFO: [VRFC 10-311] analyzing module FSM_Mult_Function
+INFO: [VRFC 10-311] analyzing module FSM_test
+INFO: [VRFC 10-311] analyzing module First_Phase_M
+INFO: [VRFC 10-311] analyzing module RegisterAdd
+INFO: [VRFC 10-311] analyzing module RegisterAdd_0
+INFO: [VRFC 10-311] analyzing module RegisterAdd_2
+INFO: [VRFC 10-311] analyzing module RegisterAdd__parameterized0
+INFO: [VRFC 10-311] analyzing module RegisterAdd__parameterized1
+INFO: [VRFC 10-311] analyzing module RegisterAdd__parameterized2
+INFO: [VRFC 10-311] analyzing module RegisterAdd__parameterized3
+INFO: [VRFC 10-311] analyzing module RegisterAdd__parameterized4
+INFO: [VRFC 10-311] analyzing module RegisterAdd__parameterized5
+INFO: [VRFC 10-311] analyzing module RegisterAdd__parameterized6
+INFO: [VRFC 10-311] analyzing module RegisterAdd__parameterized8
+INFO: [VRFC 10-311] analyzing module RegisterMult
+INFO: [VRFC 10-311] analyzing module RegisterMult_1
+INFO: [VRFC 10-311] analyzing module RegisterMult__parameterized0
+INFO: [VRFC 10-311] analyzing module RegisterMult__parameterized1
+INFO: [VRFC 10-311] analyzing module RegisterMult__parameterized2
+INFO: [VRFC 10-311] analyzing module RegisterMult__parameterized3
+INFO: [VRFC 10-311] analyzing module Sgf_Multiplication
+INFO: [VRFC 10-311] analyzing module Tenth_Phase
+INFO: [VRFC 10-311] analyzing module Transmisor
+INFO: [VRFC 10-311] analyzing module Transmisor_TX
+INFO: [VRFC 10-311] analyzing module UBuffer
+INFO: [VRFC 10-311] analyzing module Uart
+INFO: [VRFC 10-311] analyzing module Zero_InfMult_Unit
+INFO: [VRFC 10-311] analyzing module adder__parameterized0
+INFO: [VRFC 10-311] analyzing module cont_test
+INFO: [VRFC 10-311] analyzing module cont_test__parameterized0
+INFO: [VRFC 10-311] analyzing module multiplier
+INFO: [VRFC 10-311] analyzing module multiplier__parameterized0
+INFO: [VRFC 10-311] analyzing module multiplier__parameterized1
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/RegisterAdd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterAdd
+WARNING: [VRFC 10-1195] overwriting previous definition of module RegisterAdd [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/RegisterAdd.v:21]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Mux_Array.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_Array
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/MultiplexTxT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MultiplexTxT
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Oper_Start_In.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Oper_Start_In
+INFO: [VRFC 10-2458] undeclared symbol sign_result, assumed default net type wire [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Oper_Start_In.v:110]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/exp_operation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Exp_Operation
+INFO: [VRFC 10-2458] undeclared symbol Overflow_flag, assumed default net type wire [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/exp_operation.v:62]
+INFO: [VRFC 10-2458] undeclared symbol Underflow_flag, assumed default net type wire [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/exp_operation.v:63]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Rotate_Mux_Array.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Rotate_Mux_Array
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/sgn_result.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sgn_result
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/shift_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift_mux_array
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Barrel_shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Barrel_Shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Multiplexer_AC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_AC
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/add_sub_carry_out.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_sub_carry_out
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/xor_tri.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xor_tri
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Priority_Codec_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Priority_Codec_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Combinational_Logic_LZA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Combinational_Logic_LZA
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Round_Sgf_Dec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Round_Sgf_Dec
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/FPU_Add_Subtract_Function.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FPU_Add_Subtract_Function
+INFO: [VRFC 10-2458] undeclared symbol zero_flag, assumed default net type wire [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/FPU_Add_Subtract_Function.v:168]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Mux_3x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_3x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/LZA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LZA
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Full_Adder_PG_1b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Full_Adder_PG_1b
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Priority_Codec_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Priority_Codec_64
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Tenth_Phase.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Tenth_Phase
+WARNING: [VRFC 10-1195] overwriting previous definition of module Tenth_Phase [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Tenth_Phase.v:21]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Add_Subt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Add_Subt
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Full_Adder_PG.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Full_Adder_PG
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/FSM_Add_Subtract.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_Add_Subtract
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.srcs/sim_1/new/Testbench_FPU_Add_Subt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Testbench_FPU_Add_Subt
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.srcs/sim_1/new/Testbench_Sgf_multiplication.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Testbench_Sgf_multiplication
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Sgf_Multiplication.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sgf_Multiplication
+WARNING: [VRFC 10-1195] overwriting previous definition of module Sgf_Multiplication [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Sgf_Multiplication.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/substractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module substractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/RegisterMult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterMult
+WARNING: [VRFC 10-1195] overwriting previous definition of module RegisterMult [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/RegisterMult.v:21]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/multiplier.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier
+WARNING: [VRFC 10-1195] overwriting previous definition of module multiplier [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/multiplier.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.srcs/sim_1/new/Testbench_FPU_multiplication.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Testbench_FPU_multiplication
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Comparator_Equal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator_Equal
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Barrel_Shifter_M.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Barrel_Shifter_M
+WARNING: [VRFC 10-1195] overwriting previous definition of module Barrel_Shifter_M [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Barrel_Shifter_M.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/FPU_Multiplication_Function.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FPU_Multiplication_Function
+INFO: [VRFC 10-2458] undeclared symbol FSM_Shift_Value, assumed default net type wire [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/FPU_Multiplication_Function.v:158]
+INFO: [VRFC 10-2458] undeclared symbol FSM_selector_C, assumed default net type wire [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/FPU_Multiplication_Function.v:179]
+WARNING: [VRFC 10-1195] overwriting previous definition of module FPU_Multiplication_Function [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/FPU_Multiplication_Function.v:21]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Exp_operation_m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Exp_Operation_m
+WARNING: [VRFC 10-1195] overwriting previous definition of module Exp_Operation_m [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Exp_operation_m.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Round_decoder_M.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Round_decoder_M
+INFO: [VRFC 10-2458] undeclared symbol round_ok, assumed default net type wire [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Round_decoder_M.v:34]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/First_Phase_M.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module First_Phase_M
+WARNING: [VRFC 10-1195] overwriting previous definition of module First_Phase_M [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/First_Phase_M.v:21]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Comparator_Less.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator_Less
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/XOR_M.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module XOR_M
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Adder_Round.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder_Round
+WARNING: [VRFC 10-1195] overwriting previous definition of module Adder_Round [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Adder_Round.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Deco_Round_Mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Deco_Round_Mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/OR_Module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_Module
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Zero_InfMult_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Zero_InfMult_Unit
+WARNING: [VRFC 10-1195] overwriting previous definition of module Zero_InfMult_Unit [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Zero_InfMult_Unit.v:21]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/FSM_Mult_Function.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_Mult_Function
+WARNING: [VRFC 10-1195] overwriting previous definition of module FSM_Mult_Function [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/FSM_Mult_Function.v:21]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Sign_result_m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sign_result_m
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.srcs/sim_1/new/Testbench_uart.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Testbench_uart
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/Transmisor_TX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Transmisor_TX
+WARNING: [VRFC 10-1195] overwriting previous definition of module Transmisor_TX [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/Transmisor_TX.v:15]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/Transmisor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Transmisor
+WARNING: [VRFC 10-1195] overwriting previous definition of module Transmisor [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/Transmisor.v:15]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/ROM_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/ReceptorRX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ReceptorRX
+INFO: [VRFC 10-2458] undeclared symbol rx_ready, assumed default net type wire [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/ReceptorRX.v:22]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/Receptor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Receptor
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/Mux_4x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_4x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/Uart.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Uart
+WARNING: [VRFC 10-1195] overwriting previous definition of module Uart [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/Uart.v:15]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/Mux_8x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_8x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/FSM_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_test
+WARNING: [VRFC 10-1195] overwriting previous definition of module FSM_test [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/FSM_test.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/UBuffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UBuffer
+WARNING: [VRFC 10-1195] overwriting previous definition of module UBuffer [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/UBuffer.v:14]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/cont_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cont_test
+WARNING: [VRFC 10-1195] overwriting previous definition of module cont_test [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/cont_test.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/Coun_Baud.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Coun_Baud
+WARNING: [VRFC 10-1195] overwriting previous definition of module Coun_Baud [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/Coun_Baud.v:14]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/FPU_UART.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FPU_UART
+WARNING: [VRFC 10-1195] overwriting previous definition of module FPU_UART [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/FPU_UART.v:23]
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.sim/sim_1/impl/timing'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2015.4/bin/unwrapped/lnx64.o/xelab -wto 8cfbd71f8c2244a4802a4668ad038820 --debug typical --relax --mt 8 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot Testbench_uart_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 xil_defaultlib.Testbench_uart xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 83 differs from formal bit length 106 for port Data_B_i [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Sgf_Multiplication.v:290]
+WARNING: [VRFC 10-278] actual bit length 53 differs from formal bit length 52 for port Round_Bits_i [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/FPU_Multiplication_Function.v:315]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 10 for port d [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/FPU_UART.v:157]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 3 for port d [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/FPU_UART.v:168]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.FSM_test
+Compiling module xil_defaultlib.FSM_Mult_Function
+Compiling module xil_defaultlib.RegisterAdd(W=1)
+Compiling module xil_defaultlib.RegisterAdd(W=2)
+Compiling module xil_defaultlib.RegisterMult(W=64)
+Compiling module xil_defaultlib.First_Phase_M(W=64)
+Compiling module xil_defaultlib.Comparator_Equal(S=63)
+Compiling module xil_defaultlib.Zero_InfMult_Unit(W=64)
+Compiling module xil_defaultlib.Multiplexer_AC(W=12)
+Compiling module xil_defaultlib.Mux_3x1(W=11)
+Compiling module xil_defaultlib.add_sub_carry_out(W=12)
+Compiling module xil_defaultlib.RegisterMult(W=12)
+Compiling module xil_defaultlib.RegisterMult(W=1)
+Compiling module xil_defaultlib.Comparator_Less(W=12)
+Compiling module xil_defaultlib.Exp_Operation_m(EW=11)
+Compiling module xil_defaultlib.XOR_M
+Compiling module xil_defaultlib.multiplier(W=26)
+Compiling module xil_defaultlib.RegisterAdd(W=52)
+Compiling module xil_defaultlib.multiplier(W=27)
+Compiling module xil_defaultlib.RegisterAdd(W=54)
+Compiling module xil_defaultlib.adder(W=27)
+Compiling module xil_defaultlib.RegisterAdd(W=28)
+Compiling module xil_defaultlib.multiplier(W=28)
+Compiling module xil_defaultlib.RegisterAdd(W=56)
+Compiling module xil_defaultlib.substractor(W=56)
+Compiling module xil_defaultlib.adder(W=106)
+Compiling module xil_defaultlib.RegisterAdd(W=106)
+Compiling module xil_defaultlib.Sgf_Multiplication(SW=53)
+Compiling module xil_defaultlib.Multiplexer_AC(W=53)
+Compiling module xil_defaultlib.Multiplexer_AC(W=1)
+Compiling module xil_defaultlib.shift_mux_array(SWR=53,LEVEL=0)
+Compiling module xil_defaultlib.RegisterMult(W=53)
+Compiling module xil_defaultlib.Barrel_Shifter_M(SW=53)
+Compiling module xil_defaultlib.OR_Module(W=52)
+Compiling module xil_defaultlib.Deco_Round_Mult
+Compiling module xil_defaultlib.Round_decoder_M(SW=52)
+Compiling module xil_defaultlib.adder(W=53)
+Compiling module xil_defaultlib.RegisterAdd(W=53)
+Compiling module xil_defaultlib.Adder_Round(SW=53)
+Compiling module xil_defaultlib.Mux_3x1(W=1)
+Compiling module xil_defaultlib.Multiplexer_AC(W=11)
+Compiling module xil_defaultlib.Multiplexer_AC(W=52)
+Compiling module xil_defaultlib.RegisterAdd(W=64)
+Compiling module xil_defaultlib.Tenth_Phase(W=64,EW=11,SW=52)
+Compiling module xil_defaultlib.FPU_Multiplication_Function(W=64...
+Compiling module xil_defaultlib.Coun_Baud
+Compiling module xil_defaultlib.UBuffer
+Compiling module xil_defaultlib.Receptor
+Compiling module xil_defaultlib.ReceptorRX
+Compiling module xil_defaultlib.Transmisor
+Compiling module xil_defaultlib.Transmisor_TX
+Compiling module xil_defaultlib.Uart
+Compiling module xil_defaultlib.ROM_test(W=64)
+Compiling module xil_defaultlib.ROM_test(W=64,N=1)
+Compiling module xil_defaultlib.cont_test(W=10)
+Compiling module xil_defaultlib.cont_test(W=3)
+Compiling module xil_defaultlib.Mux_8x1
+Compiling module xil_defaultlib.FPU_UART(W=64,EW=11,SW=52,SWR=55...
+Compiling module xil_defaultlib.Testbench_uart
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Testbench_uart_time_impl
+
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source /media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.sim/sim_1/impl/timing/xsim.dir/Testbench_uart_time_impl/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu May  5 07:22:51 2016...
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 6613.504 ; gain = 0.000 ; free physical = 99 ; free virtual = 1927
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.sim/sim_1/impl/timing'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Testbench_uart_time_impl -key {Post-Implementation:sim_1:Timing:Testbench_uart} -tclbatch {Testbench_uart.tcl} -view {/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/Testbench_FPU_Add_Subt_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+open_wave_config /media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/Testbench_FPU_Add_Subt_behav.wcfg
+source Testbench_uart.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: Too many words specified in data file /media/francis/Acer/Proyecto de graduacion/Link to GitHub/Proyecto_De_Graduacion/TXTVerification/Hexadecimal_A.txt
+WARNING: Too many words specified in data file /media/francis/Acer/Proyecto de graduacion/Link to GitHub/Proyecto_De_Graduacion/TXTVerification/Hexadecimal_B.txt
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Testbench_uart_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:01:13 ; elapsed = 00:00:54 . Memory (MB): peak = 6629.039 ; gain = 761.789 ; free physical = 74 ; free virtual = 1914
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+WARNING: Too many words specified in data file /media/francis/Acer/Proyecto de graduacion/Link to GitHub/Proyecto_De_Graduacion/TXTVerification/Hexadecimal_A.txt
+WARNING: Too many words specified in data file /media/francis/Acer/Proyecto de graduacion/Link to GitHub/Proyecto_De_Graduacion/TXTVerification/Hexadecimal_B.txt
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:15 ; elapsed = 00:00:39 . Memory (MB): peak = 6636.246 ; gain = 7.207 ; free physical = 30 ; free virtual = 1894
+INFO: [Common 17-344] 'run' was cancelled
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+WARNING: Too many words specified in data file /media/francis/Acer/Proyecto de graduacion/Link to GitHub/Proyecto_De_Graduacion/TXTVerification/Hexadecimal_A.txt
+WARNING: Too many words specified in data file /media/francis/Acer/Proyecto de graduacion/Link to GitHub/Proyecto_De_Graduacion/TXTVerification/Hexadecimal_B.txt
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 6636.250 ; gain = 0.000 ; free physical = 110 ; free virtual = 1879
+INFO: [Common 17-344] 'run' was cancelled
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+WARNING: Too many words specified in data file /media/francis/Acer/Proyecto de graduacion/Link to GitHub/Proyecto_De_Graduacion/TXTVerification/Hexadecimal_A.txt
+WARNING: Too many words specified in data file /media/francis/Acer/Proyecto de graduacion/Link to GitHub/Proyecto_De_Graduacion/TXTVerification/Hexadecimal_B.txt
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 6638.250 ; gain = 2.000 ; free physical = 31 ; free virtual = 1876
+INFO: [Common 17-344] 'run' was cancelled
+save_wave_config {/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/Testbench_FPU_Add_Subt_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+report_drc -name drc_1 -ruledecks {default}
+INFO: [DRC 23-27] Running DRC with 4 threads
+reset_run synth_1
+launch_runs synth_1
+[Thu May  5 07:34:14 2016] Launched synth_1...
+Run output will be captured here: /media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.runs/synth_1/runme.log
+launch_runs impl_1
+[Thu May  5 07:36:08 2016] Launched impl_1...
+Run output will be captured here: /media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.runs/impl_1/runme.log
+close_design
+launch_runs impl_1 -to_step write_bitstream
+[Thu May  5 07:38:09 2016] Launched impl_1...
+Run output will be captured here: /media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.4
+  **** Build date : Nov 18 2015-09:53:32
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210274591798A
+set_property PROGRAM.FILE {/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.runs/impl_1/FPU_UART.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.runs/impl_1/FPU_UART.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+close_hw
+reset_run synth_1
+launch_runs synth_1
+[Thu May  5 07:43:25 2016] Launched synth_1...
+Run output will be captured here: /media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.runs/synth_1/runme.log
+launch_runs impl_1
+[Thu May  5 07:44:40 2016] Launched impl_1...
+Run output will be captured here: /media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.runs/impl_1/runme.log
+launch_simulation -mode post-implementation -type timing
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [Netlist 29-17] Analyzing 46 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2015.4
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/TXTVerification/.Xil/Vivado-23734-francis-Aspire-E1-570/dcp/FPU_UART.xdc]
+Finished Parsing XDC File [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/TXTVerification/.Xil/Vivado-23734-francis-Aspire-E1-570/dcp/FPU_UART.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.46 ; elapsed = 00:00:02 . Memory (MB): peak = 6669.625 ; gain = 0.000 ; free physical = 908 ; free virtual = 1777
+Restored from archive | CPU: 0.530000 secs | Memory: 4.198257 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.46 ; elapsed = 00:00:02 . Memory (MB): peak = 6669.625 ; gain = 0.000 ; free physical = 908 ; free virtual = 1777
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 6677.629 ; gain = 8.004 ; free physical = 892 ; free virtual = 1774
+INFO: [USF-XSim-32] Writing simulation netlist file for design 'impl_1'...
+INFO: [USF-XSim-92] write_verilog -mode timesim -nolib -sdf_anno true -force -file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.sim/sim_1/impl/timing/Testbench_uart_time_impl.v"
+write_verilog: Time (s): cpu = 00:00:22 ; elapsed = 00:00:12 . Memory (MB): peak = 6685.629 ; gain = 7.996 ; free physical = 869 ; free virtual = 1771
+INFO: [USF-XSim-33] Writing SDF file...
+INFO: [USF-XSim-93] write_sdf -mode timesim -process_corner slow -force -file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.sim/sim_1/impl/timing/Testbench_uart_time_impl.sdf"
+write_sdf: Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 6733.914 ; gain = 48.285 ; free physical = 790 ; free virtual = 1716
+INFO: [USF-XSim-34] Netlist generated:/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.sim/sim_1/impl/timing/Testbench_uart_time_impl.v
+INFO: [USF-XSim-35] SDF generated:/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.sim/sim_1/impl/timing/Testbench_uart_time_impl.sdf
+INFO: [USF-XSim-37] Inspecting design source files for 'Testbench_uart' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported '/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.sim/sim_1/impl/timing/Hexadecimal_B.txt'
+INFO: [USF-XSim-25] Exported '/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.sim/sim_1/impl/timing/Hexadecimal_A.txt'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.sim/sim_1/impl/timing'
+xvlog -m64 --relax -prj Testbench_uart_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.sim/sim_1/impl/timing/Testbench_uart_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder_Round
+INFO: [VRFC 10-311] analyzing module Barrel_Shifter_M
+INFO: [VRFC 10-311] analyzing module Coun_Baud
+INFO: [VRFC 10-311] analyzing module Exp_Operation_m
+INFO: [VRFC 10-311] analyzing module FPU_Multiplication_Function
+INFO: [VRFC 10-311] analyzing module FPU_UART
+INFO: [VRFC 10-311] analyzing module FSM_Mult_Function
+INFO: [VRFC 10-311] analyzing module FSM_test
+INFO: [VRFC 10-311] analyzing module First_Phase_M
+INFO: [VRFC 10-311] analyzing module Mux_4x1
+INFO: [VRFC 10-311] analyzing module RegisterAdd
+INFO: [VRFC 10-311] analyzing module RegisterAdd_0
+INFO: [VRFC 10-311] analyzing module RegisterAdd_3
+INFO: [VRFC 10-311] analyzing module RegisterAdd__parameterized0
+INFO: [VRFC 10-311] analyzing module RegisterAdd__parameterized3
+INFO: [VRFC 10-311] analyzing module RegisterAdd__parameterized4
+INFO: [VRFC 10-311] analyzing module RegisterAdd__parameterized6
+INFO: [VRFC 10-311] analyzing module RegisterAdd__parameterized8
+INFO: [VRFC 10-311] analyzing module RegisterMult
+INFO: [VRFC 10-311] analyzing module RegisterMult_2
+INFO: [VRFC 10-311] analyzing module RegisterMult__parameterized0
+INFO: [VRFC 10-311] analyzing module RegisterMult__parameterized1
+INFO: [VRFC 10-311] analyzing module RegisterMult__parameterized2
+INFO: [VRFC 10-311] analyzing module RegisterMult__parameterized3
+INFO: [VRFC 10-311] analyzing module Sgf_Multiplication
+INFO: [VRFC 10-311] analyzing module Tenth_Phase
+INFO: [VRFC 10-311] analyzing module Transmisor
+INFO: [VRFC 10-311] analyzing module Transmisor_TX
+INFO: [VRFC 10-311] analyzing module UBuffer
+INFO: [VRFC 10-311] analyzing module Uart
+INFO: [VRFC 10-311] analyzing module Zero_InfMult_Unit
+INFO: [VRFC 10-311] analyzing module adder__parameterized0
+INFO: [VRFC 10-311] analyzing module cont_test
+INFO: [VRFC 10-311] analyzing module cont_test__parameterized0
+INFO: [VRFC 10-311] analyzing module multiplier
+INFO: [VRFC 10-311] analyzing module multiplier_1
+INFO: [VRFC 10-311] analyzing module multiplier__parameterized0
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/RegisterAdd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterAdd
+WARNING: [VRFC 10-1195] overwriting previous definition of module RegisterAdd [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/RegisterAdd.v:21]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Mux_Array.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_Array
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/MultiplexTxT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MultiplexTxT
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Oper_Start_In.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Oper_Start_In
+INFO: [VRFC 10-2458] undeclared symbol sign_result, assumed default net type wire [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Oper_Start_In.v:110]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/exp_operation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Exp_Operation
+INFO: [VRFC 10-2458] undeclared symbol Overflow_flag, assumed default net type wire [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/exp_operation.v:62]
+INFO: [VRFC 10-2458] undeclared symbol Underflow_flag, assumed default net type wire [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/exp_operation.v:63]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Rotate_Mux_Array.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Rotate_Mux_Array
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/sgn_result.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sgn_result
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/shift_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift_mux_array
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Barrel_shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Barrel_Shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Multiplexer_AC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_AC
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/add_sub_carry_out.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_sub_carry_out
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/xor_tri.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xor_tri
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Priority_Codec_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Priority_Codec_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Combinational_Logic_LZA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Combinational_Logic_LZA
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Round_Sgf_Dec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Round_Sgf_Dec
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/FPU_Add_Subtract_Function.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FPU_Add_Subtract_Function
+INFO: [VRFC 10-2458] undeclared symbol zero_flag, assumed default net type wire [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/FPU_Add_Subtract_Function.v:168]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Mux_3x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_3x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/LZA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LZA
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Full_Adder_PG_1b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Full_Adder_PG_1b
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Priority_Codec_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Priority_Codec_64
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Tenth_Phase.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Tenth_Phase
+WARNING: [VRFC 10-1195] overwriting previous definition of module Tenth_Phase [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Tenth_Phase.v:21]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Add_Subt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Add_Subt
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Full_Adder_PG.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Full_Adder_PG
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/FSM_Add_Subtract.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_Add_Subtract
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.srcs/sim_1/new/Testbench_FPU_Add_Subt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Testbench_FPU_Add_Subt
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.srcs/sim_1/new/Testbench_Sgf_multiplication.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Testbench_Sgf_multiplication
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Sgf_Multiplication.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sgf_Multiplication
+WARNING: [VRFC 10-1195] overwriting previous definition of module Sgf_Multiplication [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Sgf_Multiplication.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/substractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module substractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/RegisterMult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterMult
+WARNING: [VRFC 10-1195] overwriting previous definition of module RegisterMult [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/RegisterMult.v:21]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/multiplier.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier
+WARNING: [VRFC 10-1195] overwriting previous definition of module multiplier [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/multiplier.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.srcs/sim_1/new/Testbench_FPU_multiplication.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Testbench_FPU_multiplication
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Comparator_Equal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator_Equal
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Barrel_Shifter_M.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Barrel_Shifter_M
+WARNING: [VRFC 10-1195] overwriting previous definition of module Barrel_Shifter_M [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Barrel_Shifter_M.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/FPU_Multiplication_Function.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FPU_Multiplication_Function
+INFO: [VRFC 10-2458] undeclared symbol FSM_Shift_Value, assumed default net type wire [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/FPU_Multiplication_Function.v:156]
+INFO: [VRFC 10-2458] undeclared symbol FSM_selector_C, assumed default net type wire [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/FPU_Multiplication_Function.v:177]
+WARNING: [VRFC 10-1195] overwriting previous definition of module FPU_Multiplication_Function [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/FPU_Multiplication_Function.v:21]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Exp_operation_m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Exp_Operation_m
+WARNING: [VRFC 10-1195] overwriting previous definition of module Exp_Operation_m [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Exp_operation_m.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Round_decoder_M.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Round_decoder_M
+INFO: [VRFC 10-2458] undeclared symbol round_ok, assumed default net type wire [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Round_decoder_M.v:34]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/First_Phase_M.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module First_Phase_M
+WARNING: [VRFC 10-1195] overwriting previous definition of module First_Phase_M [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/First_Phase_M.v:21]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Comparator_Less.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator_Less
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/XOR_M.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module XOR_M
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Adder_Round.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder_Round
+WARNING: [VRFC 10-1195] overwriting previous definition of module Adder_Round [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Adder_Round.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Deco_Round_Mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Deco_Round_Mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/OR_Module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_Module
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Zero_InfMult_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Zero_InfMult_Unit
+WARNING: [VRFC 10-1195] overwriting previous definition of module Zero_InfMult_Unit [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Zero_InfMult_Unit.v:21]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/FSM_Mult_Function.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_Mult_Function
+WARNING: [VRFC 10-1195] overwriting previous definition of module FSM_Mult_Function [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/FSM_Mult_Function.v:21]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Sign_result_m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sign_result_m
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.srcs/sim_1/new/Testbench_uart.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Testbench_uart
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/Transmisor_TX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Transmisor_TX
+WARNING: [VRFC 10-1195] overwriting previous definition of module Transmisor_TX [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/Transmisor_TX.v:15]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/Transmisor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Transmisor
+WARNING: [VRFC 10-1195] overwriting previous definition of module Transmisor [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/Transmisor.v:15]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/ROM_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/ReceptorRX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ReceptorRX
+INFO: [VRFC 10-2458] undeclared symbol rx_ready, assumed default net type wire [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/ReceptorRX.v:22]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/Receptor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Receptor
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/Mux_4x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_4x1
+WARNING: [VRFC 10-1195] overwriting previous definition of module Mux_4x1 [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/Mux_4x1.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/Uart.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Uart
+WARNING: [VRFC 10-1195] overwriting previous definition of module Uart [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/Uart.v:15]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/Mux_8x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_8x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/FSM_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_test
+WARNING: [VRFC 10-1195] overwriting previous definition of module FSM_test [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/FSM_test.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/UBuffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UBuffer
+WARNING: [VRFC 10-1195] overwriting previous definition of module UBuffer [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/UBuffer.v:14]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/cont_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cont_test
+WARNING: [VRFC 10-1195] overwriting previous definition of module cont_test [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/cont_test.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/Coun_Baud.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Coun_Baud
+WARNING: [VRFC 10-1195] overwriting previous definition of module Coun_Baud [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/Coun_Baud.v:14]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/FPU_UART.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FPU_UART
+WARNING: [VRFC 10-1195] overwriting previous definition of module FPU_UART [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/FPU_UART.v:23]
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.sim/sim_1/impl/timing'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2015.4/bin/unwrapped/lnx64.o/xelab -wto 8cfbd71f8c2244a4802a4668ad038820 --debug typical --relax --mt 8 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot Testbench_uart_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 xil_defaultlib.Testbench_uart xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 83 differs from formal bit length 106 for port Data_B_i [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Sgf_Multiplication.v:288]
+WARNING: [VRFC 10-278] actual bit length 53 differs from formal bit length 52 for port Round_Bits_i [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/FPU_Multiplication_Function.v:311]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 10 for port d [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/FPU_UART.v:157]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 3 for port d [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/FPU_UART.v:168]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.FSM_test
+Compiling module xil_defaultlib.FSM_Mult_Function
+Compiling module xil_defaultlib.RegisterAdd(W=1)
+Compiling module xil_defaultlib.RegisterAdd(W=2)
+Compiling module xil_defaultlib.RegisterMult(W=64)
+Compiling module xil_defaultlib.First_Phase_M(W=64)
+Compiling module xil_defaultlib.Comparator_Equal(S=63)
+Compiling module xil_defaultlib.Zero_InfMult_Unit(W=64)
+Compiling module xil_defaultlib.Multiplexer_AC(W=12)
+Compiling module xil_defaultlib.Mux_3x1(W=11)
+Compiling module xil_defaultlib.add_sub_carry_out(W=12)
+Compiling module xil_defaultlib.RegisterMult(W=12)
+Compiling module xil_defaultlib.RegisterMult(W=1)
+Compiling module xil_defaultlib.Comparator_Less(W=12)
+Compiling module xil_defaultlib.Exp_Operation_m(EW=11)
+Compiling module xil_defaultlib.XOR_M
+Compiling module xil_defaultlib.multiplier(W=26)
+Compiling module xil_defaultlib.RegisterAdd(W=52)
+Compiling module xil_defaultlib.multiplier(W=27)
+Compiling module xil_defaultlib.RegisterAdd(W=54)
+Compiling module xil_defaultlib.adder(W=27)
+Compiling module xil_defaultlib.RegisterAdd(W=28)
+Compiling module xil_defaultlib.multiplier(W=28)
+Compiling module xil_defaultlib.RegisterAdd(W=56)
+Compiling module xil_defaultlib.substractor(W=56)
+Compiling module xil_defaultlib.adder(W=106)
+Compiling module xil_defaultlib.RegisterAdd(W=106)
+Compiling module xil_defaultlib.Sgf_Multiplication(SW=53)
+Compiling module xil_defaultlib.Multiplexer_AC(W=53)
+Compiling module xil_defaultlib.Multiplexer_AC(W=1)
+Compiling module xil_defaultlib.shift_mux_array(SWR=53,LEVEL=0)
+Compiling module xil_defaultlib.RegisterMult(W=53)
+Compiling module xil_defaultlib.Barrel_Shifter_M(SW=53)
+Compiling module xil_defaultlib.OR_Module(W=52)
+Compiling module xil_defaultlib.Deco_Round_Mult
+Compiling module xil_defaultlib.Round_decoder_M(SW=52)
+Compiling module xil_defaultlib.adder(W=53)
+Compiling module xil_defaultlib.RegisterAdd(W=53)
+Compiling module xil_defaultlib.Adder_Round(SW=53)
+Compiling module xil_defaultlib.Mux_3x1(W=1)
+Compiling module xil_defaultlib.Multiplexer_AC(W=11)
+Compiling module xil_defaultlib.Multiplexer_AC(W=52)
+Compiling module xil_defaultlib.RegisterAdd(W=64)
+Compiling module xil_defaultlib.Tenth_Phase(W=64,EW=11,SW=52)
+Compiling module xil_defaultlib.FPU_Multiplication_Function(W=64...
+Compiling module xil_defaultlib.Coun_Baud
+Compiling module xil_defaultlib.UBuffer
+Compiling module xil_defaultlib.Receptor
+Compiling module xil_defaultlib.ReceptorRX
+Compiling module xil_defaultlib.Transmisor
+Compiling module xil_defaultlib.Transmisor_TX
+Compiling module xil_defaultlib.Uart
+Compiling module xil_defaultlib.ROM_test(W=64)
+Compiling module xil_defaultlib.ROM_test(W=64,N=1)
+Compiling module xil_defaultlib.cont_test(W=10)
+Compiling module xil_defaultlib.cont_test(W=3)
+Compiling module xil_defaultlib.Mux_8x1
+Compiling module xil_defaultlib.FPU_UART(W=64,EW=11,SW=52,SWR=55...
+Compiling module xil_defaultlib.Testbench_uart
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Testbench_uart_time_impl
+
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source /media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.sim/sim_1/impl/timing/xsim.dir/Testbench_uart_time_impl/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu May  5 07:47:16 2016...
+run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 6733.914 ; gain = 0.000 ; free physical = 695 ; free virtual = 1710
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.sim/sim_1/impl/timing'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Testbench_uart_time_impl -key {Post-Implementation:sim_1:Timing:Testbench_uart} -tclbatch {Testbench_uart.tcl} -view {/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/Testbench_FPU_Add_Subt_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+open_wave_config /media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/Testbench_FPU_Add_Subt_behav.wcfg
+source Testbench_uart.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: Too many words specified in data file /media/francis/Acer/Proyecto de graduacion/Link to GitHub/Proyecto_De_Graduacion/TXTVerification/Hexadecimal_A.txt
+WARNING: Too many words specified in data file /media/francis/Acer/Proyecto de graduacion/Link to GitHub/Proyecto_De_Graduacion/TXTVerification/Hexadecimal_B.txt
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Testbench_uart_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:49 ; elapsed = 00:00:53 . Memory (MB): peak = 6749.695 ; gain = 80.070 ; free physical = 686 ; free virtual = 1707
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -mode post-implementation -type timing
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-32] Writing simulation netlist file for design 'impl_1'...
+INFO: [USF-XSim-92] write_verilog -mode timesim -nolib -sdf_anno true -force -file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.sim/sim_1/impl/timing/Testbench_uart_time_impl.v"
+write_verilog: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 6749.695 ; gain = 0.000 ; free physical = 685 ; free virtual = 1707
+INFO: [USF-XSim-33] Writing SDF file...
+INFO: [USF-XSim-93] write_sdf -mode timesim -process_corner slow -force -file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.sim/sim_1/impl/timing/Testbench_uart_time_impl.sdf"
+write_sdf: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 6749.695 ; gain = 0.000 ; free physical = 666 ; free virtual = 1693
+INFO: [USF-XSim-34] Netlist generated:/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.sim/sim_1/impl/timing/Testbench_uart_time_impl.v
+INFO: [USF-XSim-35] SDF generated:/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.sim/sim_1/impl/timing/Testbench_uart_time_impl.sdf
+INFO: [USF-XSim-37] Inspecting design source files for 'Testbench_uart' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported '/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.sim/sim_1/impl/timing/Hexadecimal_B.txt'
+INFO: [USF-XSim-25] Exported '/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.sim/sim_1/impl/timing/Hexadecimal_A.txt'
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE' step in '/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.sim/sim_1/impl/timing'
+xvlog -m64 --relax -prj Testbench_uart_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.sim/sim_1/impl/timing/Testbench_uart_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder_Round
+INFO: [VRFC 10-311] analyzing module Barrel_Shifter_M
+INFO: [VRFC 10-311] analyzing module Coun_Baud
+INFO: [VRFC 10-311] analyzing module Exp_Operation_m
+INFO: [VRFC 10-311] analyzing module FPU_Multiplication_Function
+INFO: [VRFC 10-311] analyzing module FPU_UART
+INFO: [VRFC 10-311] analyzing module FSM_Mult_Function
+INFO: [VRFC 10-311] analyzing module FSM_test
+INFO: [VRFC 10-311] analyzing module First_Phase_M
+INFO: [VRFC 10-311] analyzing module Mux_4x1
+INFO: [VRFC 10-311] analyzing module RegisterAdd
+INFO: [VRFC 10-311] analyzing module RegisterAdd_0
+INFO: [VRFC 10-311] analyzing module RegisterAdd_3
+INFO: [VRFC 10-311] analyzing module RegisterAdd__parameterized0
+INFO: [VRFC 10-311] analyzing module RegisterAdd__parameterized3
+INFO: [VRFC 10-311] analyzing module RegisterAdd__parameterized4
+INFO: [VRFC 10-311] analyzing module RegisterAdd__parameterized6
+INFO: [VRFC 10-311] analyzing module RegisterAdd__parameterized8
+INFO: [VRFC 10-311] analyzing module RegisterMult
+INFO: [VRFC 10-311] analyzing module RegisterMult_2
+INFO: [VRFC 10-311] analyzing module RegisterMult__parameterized0
+INFO: [VRFC 10-311] analyzing module RegisterMult__parameterized1
+INFO: [VRFC 10-311] analyzing module RegisterMult__parameterized2
+INFO: [VRFC 10-311] analyzing module RegisterMult__parameterized3
+INFO: [VRFC 10-311] analyzing module Sgf_Multiplication
+INFO: [VRFC 10-311] analyzing module Tenth_Phase
+INFO: [VRFC 10-311] analyzing module Transmisor
+INFO: [VRFC 10-311] analyzing module Transmisor_TX
+INFO: [VRFC 10-311] analyzing module UBuffer
+INFO: [VRFC 10-311] analyzing module Uart
+INFO: [VRFC 10-311] analyzing module Zero_InfMult_Unit
+INFO: [VRFC 10-311] analyzing module adder__parameterized0
+INFO: [VRFC 10-311] analyzing module cont_test
+INFO: [VRFC 10-311] analyzing module cont_test__parameterized0
+INFO: [VRFC 10-311] analyzing module multiplier
+INFO: [VRFC 10-311] analyzing module multiplier_1
+INFO: [VRFC 10-311] analyzing module multiplier__parameterized0
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/RegisterAdd.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterAdd
+WARNING: [VRFC 10-1195] overwriting previous definition of module RegisterAdd [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/RegisterAdd.v:21]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Mux_Array.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_Array
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/MultiplexTxT.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MultiplexTxT
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Oper_Start_In.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Oper_Start_In
+INFO: [VRFC 10-2458] undeclared symbol sign_result, assumed default net type wire [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Oper_Start_In.v:110]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/exp_operation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Exp_Operation
+INFO: [VRFC 10-2458] undeclared symbol Overflow_flag, assumed default net type wire [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/exp_operation.v:62]
+INFO: [VRFC 10-2458] undeclared symbol Underflow_flag, assumed default net type wire [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/exp_operation.v:63]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Rotate_Mux_Array.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Rotate_Mux_Array
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/sgn_result.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sgn_result
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/shift_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift_mux_array
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Barrel_shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Barrel_Shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Multiplexer_AC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multiplexer_AC
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/add_sub_carry_out.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_sub_carry_out
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/xor_tri.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xor_tri
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Priority_Codec_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Priority_Codec_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Combinational_Logic_LZA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Combinational_Logic_LZA
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Round_Sgf_Dec.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Round_Sgf_Dec
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/FPU_Add_Subtract_Function.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FPU_Add_Subtract_Function
+INFO: [VRFC 10-2458] undeclared symbol zero_flag, assumed default net type wire [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/FPU_Add_Subtract_Function.v:168]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Mux_3x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_3x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/LZA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LZA
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Full_Adder_PG_1b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Full_Adder_PG_1b
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Priority_Codec_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Priority_Codec_64
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Tenth_Phase.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Tenth_Phase
+WARNING: [VRFC 10-1195] overwriting previous definition of module Tenth_Phase [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Tenth_Phase.v:21]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Add_Subt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Add_Subt
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/Full_Adder_PG.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Full_Adder_PG
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Add-Subt/FSM_Add_Subtract.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_Add_Subtract
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.srcs/sim_1/new/Testbench_FPU_Add_Subt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Testbench_FPU_Add_Subt
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.srcs/sim_1/new/Testbench_Sgf_multiplication.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Testbench_Sgf_multiplication
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Sgf_Multiplication.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sgf_Multiplication
+WARNING: [VRFC 10-1195] overwriting previous definition of module Sgf_Multiplication [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Sgf_Multiplication.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/substractor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module substractor
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/RegisterMult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterMult
+WARNING: [VRFC 10-1195] overwriting previous definition of module RegisterMult [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/RegisterMult.v:21]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/multiplier.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplier
+WARNING: [VRFC 10-1195] overwriting previous definition of module multiplier [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/multiplier.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.srcs/sim_1/new/Testbench_FPU_multiplication.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Testbench_FPU_multiplication
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Comparator_Equal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator_Equal
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Barrel_Shifter_M.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Barrel_Shifter_M
+WARNING: [VRFC 10-1195] overwriting previous definition of module Barrel_Shifter_M [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Barrel_Shifter_M.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/FPU_Multiplication_Function.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FPU_Multiplication_Function
+INFO: [VRFC 10-2458] undeclared symbol FSM_Shift_Value, assumed default net type wire [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/FPU_Multiplication_Function.v:156]
+INFO: [VRFC 10-2458] undeclared symbol FSM_selector_C, assumed default net type wire [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/FPU_Multiplication_Function.v:177]
+WARNING: [VRFC 10-1195] overwriting previous definition of module FPU_Multiplication_Function [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/FPU_Multiplication_Function.v:21]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Exp_operation_m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Exp_Operation_m
+WARNING: [VRFC 10-1195] overwriting previous definition of module Exp_Operation_m [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Exp_operation_m.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Round_decoder_M.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Round_decoder_M
+INFO: [VRFC 10-2458] undeclared symbol round_ok, assumed default net type wire [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Round_decoder_M.v:34]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/First_Phase_M.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module First_Phase_M
+WARNING: [VRFC 10-1195] overwriting previous definition of module First_Phase_M [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/First_Phase_M.v:21]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Comparator_Less.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Comparator_Less
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/XOR_M.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module XOR_M
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Adder_Round.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder_Round
+WARNING: [VRFC 10-1195] overwriting previous definition of module Adder_Round [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Adder_Round.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Deco_Round_Mult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Deco_Round_Mult
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/OR_Module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OR_Module
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Zero_InfMult_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Zero_InfMult_Unit
+WARNING: [VRFC 10-1195] overwriting previous definition of module Zero_InfMult_Unit [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Zero_InfMult_Unit.v:21]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/FSM_Mult_Function.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_Mult_Function
+WARNING: [VRFC 10-1195] overwriting previous definition of module FSM_Mult_Function [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/FSM_Mult_Function.v:21]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Sign_result_m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sign_result_m
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.srcs/sim_1/new/Testbench_uart.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Testbench_uart
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/Transmisor_TX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Transmisor_TX
+WARNING: [VRFC 10-1195] overwriting previous definition of module Transmisor_TX [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/Transmisor_TX.v:15]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/Transmisor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Transmisor
+WARNING: [VRFC 10-1195] overwriting previous definition of module Transmisor [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/Transmisor.v:15]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/ROM_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ROM_test
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/ReceptorRX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ReceptorRX
+INFO: [VRFC 10-2458] undeclared symbol rx_ready, assumed default net type wire [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/ReceptorRX.v:22]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/Receptor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Receptor
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/Mux_4x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_4x1
+WARNING: [VRFC 10-1195] overwriting previous definition of module Mux_4x1 [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/Mux_4x1.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/Uart.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Uart
+WARNING: [VRFC 10-1195] overwriting previous definition of module Uart [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/Uart.v:15]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/Mux_8x1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_8x1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/FSM_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FSM_test
+WARNING: [VRFC 10-1195] overwriting previous definition of module FSM_test [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/FSM_test.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/UBuffer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UBuffer
+WARNING: [VRFC 10-1195] overwriting previous definition of module UBuffer [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/UBuffer.v:14]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/cont_test.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cont_test
+WARNING: [VRFC 10-1195] overwriting previous definition of module cont_test [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/cont_test.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/Coun_Baud.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Coun_Baud
+WARNING: [VRFC 10-1195] overwriting previous definition of module Coun_Baud [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/Coun_Baud.v:14]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/FPU_UART.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FPU_UART
+WARNING: [VRFC 10-1195] overwriting previous definition of module FPU_UART [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/FPU_UART.v:23]
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.sim/sim_1/impl/timing'
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2015.4/bin/unwrapped/lnx64.o/xelab -wto 8cfbd71f8c2244a4802a4668ad038820 --debug typical --relax --mt 8 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot Testbench_uart_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 xil_defaultlib.Testbench_uart xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 38 differs from formal bit length 48 for port Data_B_i [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Sgf_Multiplication.v:171]
+WARNING: [VRFC 10-278] actual bit length 24 differs from formal bit length 23 for port Round_Bits_i [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/FPU_Multiplication_Function.v:311]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 10 for port d [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/FPU_UART.v:157]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 3 for port d [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/FPU_UART.v:168]
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 2 for port select [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/fpuuart/FPU_UART.v:179]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.FSM_test
+Compiling module xil_defaultlib.FSM_Mult_Function
+Compiling module xil_defaultlib.RegisterAdd(W=1)
+Compiling module xil_defaultlib.RegisterAdd(W=2)
+Compiling module xil_defaultlib.RegisterMult(W=32)
+Compiling module xil_defaultlib.First_Phase_M(W=32)
+Compiling module xil_defaultlib.Comparator_Equal(S=31)
+Compiling module xil_defaultlib.Zero_InfMult_Unit(W=32)
+Compiling module xil_defaultlib.Multiplexer_AC(W=9)
+Compiling module xil_defaultlib.Mux_3x1(W=8)
+Compiling module xil_defaultlib.add_sub_carry_out(W=9)
+Compiling module xil_defaultlib.RegisterMult(W=9)
+Compiling module xil_defaultlib.RegisterMult(W=1)
+Compiling module xil_defaultlib.Comparator_Less(W=9)
+Compiling module xil_defaultlib.Exp_Operation_m(EW=8)
+Compiling module xil_defaultlib.XOR_M
+Compiling module xil_defaultlib.multiplier(W=12)
+Compiling module xil_defaultlib.RegisterAdd(W=24)
+Compiling module xil_defaultlib.adder(W=12)
+Compiling module xil_defaultlib.RegisterAdd(W=13)
+Compiling module xil_defaultlib.multiplier(W=13)
+Compiling module xil_defaultlib.RegisterAdd(W=26)
+Compiling module xil_defaultlib.substractor(W=26)
+Compiling module xil_defaultlib.adder(W=48)
+Compiling module xil_defaultlib.RegisterAdd(W=48)
+Compiling module xil_defaultlib.Sgf_Multiplication(SW=24)
+Compiling module xil_defaultlib.Multiplexer_AC(W=24)
+Compiling module xil_defaultlib.Multiplexer_AC(W=1)
+Compiling module xil_defaultlib.shift_mux_array(SWR=24,LEVEL=0)
+Compiling module xil_defaultlib.RegisterMult(W=24)
+Compiling module xil_defaultlib.Barrel_Shifter_M(SW=24)
+Compiling module xil_defaultlib.OR_Module(W=23)
+Compiling module xil_defaultlib.Deco_Round_Mult
+Compiling module xil_defaultlib.Round_decoder_M(SW=23)
+Compiling module xil_defaultlib.adder(W=24)
+Compiling module xil_defaultlib.Adder_Round(SW=24)
+Compiling module xil_defaultlib.Mux_3x1(W=1)
+Compiling module xil_defaultlib.Multiplexer_AC(W=8)
+Compiling module xil_defaultlib.Multiplexer_AC(W=23)
+Compiling module xil_defaultlib.RegisterAdd(W=32)
+Compiling module xil_defaultlib.Tenth_Phase(W=32,EW=8,SW=23)
+Compiling module xil_defaultlib.FPU_Multiplication_Function(W=32...
+Compiling module xil_defaultlib.Coun_Baud
+Compiling module xil_defaultlib.UBuffer
+Compiling module xil_defaultlib.Receptor
+Compiling module xil_defaultlib.ReceptorRX
+Compiling module xil_defaultlib.Transmisor
+Compiling module xil_defaultlib.Transmisor_TX
+Compiling module xil_defaultlib.Uart
+Compiling module xil_defaultlib.ROM_test(W=32)
+Compiling module xil_defaultlib.ROM_test(W=32,N=1)
+Compiling module xil_defaultlib.cont_test(W=10)
+Compiling module xil_defaultlib.cont_test(W=3)
+Compiling module xil_defaultlib.Mux_4x1
+Compiling module xil_defaultlib.FPU_UART(W=32,EW=8,SW=23,SWR=26,...
+Compiling module xil_defaultlib.Testbench_uart
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Testbench_uart_time_impl
+
+****** Webtalk v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source /media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.sim/sim_1/impl/timing/xsim.dir/Testbench_uart_time_impl/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu May  5 07:48:27 2016...
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.sim/sim_1/impl/timing'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Testbench_uart_time_impl -key {Post-Implementation:sim_1:Timing:Testbench_uart} -tclbatch {Testbench_uart.tcl} -view {/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/Testbench_FPU_Add_Subt_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+open_wave_config /media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/Testbench_FPU_Add_Subt_behav.wcfg
+source Testbench_uart.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: Too many words specified in data file /media/francis/Acer/Proyecto de graduacion/Link to GitHub/Proyecto_De_Graduacion/TXTVerification/Hexadecimal_A.txt
+WARNING: Too many words specified in data file /media/francis/Acer/Proyecto de graduacion/Link to GitHub/Proyecto_De_Graduacion/TXTVerification/Hexadecimal_B.txt
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Testbench_uart_time_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 6758.504 ; gain = 8.809 ; free physical = 656 ; free virtual = 1687
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+WARNING: Too many words specified in data file /media/francis/Acer/Proyecto de graduacion/Link to GitHub/Proyecto_De_Graduacion/TXTVerification/Hexadecimal_A.txt
+WARNING: Too many words specified in data file /media/francis/Acer/Proyecto de graduacion/Link to GitHub/Proyecto_De_Graduacion/TXTVerification/Hexadecimal_B.txt
+run all
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run: Time (s): cpu = 00:00:09 ; elapsed = 00:00:20 . Memory (MB): peak = 6775.719 ; gain = 8.000 ; free physical = 459 ; free virtual = 1678
+INFO: [Common 17-344] 'run' was cancelled
+launch_runs impl_1 -to_step write_bitstream
+[Thu May  5 07:49:53 2016] Launched impl_1...
+Run output will be captured here: /media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2015.4
+  **** Build date : Nov 18 2015-09:53:32
+    ** Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210274591798A
+set_property PROGRAM.FILE {/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.runs/impl_1/FPU_UART.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.runs/impl_1/FPU_UART.bit} [lindex [get_hw_devices] 0]
+program_hw_devices -disable_eos_check [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+close_hw_target {localhost:3121/xilinx_tcf/Digilent/210274591798A}
+INFO: [Labtoolstcl 44-464] Closing hw_target localhost:3121/xilinx_tcf/Digilent/210274591798A
+disconnect_hw_server localhost:3121
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May  5 07:56:27 2016...

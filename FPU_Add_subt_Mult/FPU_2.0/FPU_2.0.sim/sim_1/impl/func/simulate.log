@@ -1,0 +1,7 @@
+Vivado Simulator 2015.4
+Time resolution is 1 ps
+WARNING: Too many words specified in data file Hexadecimal_A.txt
+WARNING: Too many words specified in data file Hexadecimal_B.txt
+WARNING: Too many words specified in data file Hexadecimal_A.txt
+WARNING: Too many words specified in data file Hexadecimal_B.txt
+$finish called at time : 103335 ns : File "/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/FPU_2.0/FPU_2.0.srcs/sim_1/new/Testbench_FPU_Add_Subt.v" Line 133

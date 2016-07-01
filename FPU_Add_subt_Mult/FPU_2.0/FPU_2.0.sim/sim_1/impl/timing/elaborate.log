@@ -1,0 +1,53 @@
+Vivado Simulator 2015.4
+Copyright 1986-1999, 2001-2015 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2015.4/bin/unwrapped/lnx64.o/xelab -wto 8cfbd71f8c2244a4802a4668ad038820 --debug typical --relax --mt 8 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot Testbench_FPU_multiplication_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 xil_defaultlib.Testbench_FPU_multiplication xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 38 differs from formal bit length 48 for port Data_B_i [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/Sgf_Multiplication.v:176]
+WARNING: [VRFC 10-278] actual bit length 24 differs from formal bit length 23 for port Round_Bits_i [/media/francis/Acer/Users/Francis/Documents/GitHub/Proyecto_De_Graduacion/FPU_FLM/RTL/Mult/FPU_Multiplication_Function.v:311]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.FSM_Mult_Function
+Compiling module xil_defaultlib.RegisterAdd(W=1)
+Compiling module xil_defaultlib.RegisterAdd(W=2)
+Compiling module xil_defaultlib.RegisterMult(W=32)
+Compiling module xil_defaultlib.First_Phase_M(W=32)
+Compiling module xil_defaultlib.Comparator_Equal(S=31)
+Compiling module xil_defaultlib.Zero_InfMult_Unit(W=32)
+Compiling module xil_defaultlib.Multiplexer_AC(W=9)
+Compiling module xil_defaultlib.Mux_3x1(W=8)
+Compiling module xil_defaultlib.add_sub_carry_out(W=9)
+Compiling module xil_defaultlib.RegisterMult(W=9)
+Compiling module xil_defaultlib.RegisterMult(W=1)
+Compiling module xil_defaultlib.Comparator_Less(W=9)
+Compiling module xil_defaultlib.Exp_Operation_m(EW=8)
+Compiling module xil_defaultlib.XOR_M
+Compiling module xil_defaultlib.multiplier(W=12)
+Compiling module xil_defaultlib.adder(W=12)
+Compiling module xil_defaultlib.multiplier(W=13)
+Compiling module xil_defaultlib.substractor(W=26)
+Compiling module xil_defaultlib.adder(W=48)
+Compiling module xil_defaultlib.RegisterAdd(W=48)
+Compiling module xil_defaultlib.Sgf_Multiplication(SW=24)
+Compiling module xil_defaultlib.Multiplexer_AC(W=24)
+Compiling module xil_defaultlib.Multiplexer_AC(W=1)
+Compiling module xil_defaultlib.shift_mux_array(SWR=24,LEVEL=0)
+Compiling module xil_defaultlib.RegisterMult(W=24)
+Compiling module xil_defaultlib.Barrel_Shifter_M(SW=24)
+Compiling module xil_defaultlib.OR_Module(W=23)
+Compiling module xil_defaultlib.Deco_Round_Mult
+Compiling module xil_defaultlib.Round_decoder_M(SW=23)
+Compiling module xil_defaultlib.adder(W=24)
+Compiling module xil_defaultlib.RegisterAdd(W=24)
+Compiling module xil_defaultlib.Adder_Round(SW=24)
+Compiling module xil_defaultlib.Mux_3x1(W=1)
+Compiling module xil_defaultlib.Multiplexer_AC(W=8)
+Compiling module xil_defaultlib.Multiplexer_AC(W=23)
+Compiling module xil_defaultlib.RegisterAdd(W=32)
+Compiling module xil_defaultlib.Tenth_Phase(W=32,EW=8,SW=23)
+Compiling module xil_defaultlib.FPU_Multiplication_Function(W=32...
+Compiling module xil_defaultlib.Testbench_FPU_multiplication
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Testbench_FPU_multiplication_time_impl

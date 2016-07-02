@@ -1,9 +1,0 @@
-(DELAYFILE 
-(SDFVERSION "3.0" )
-(DESIGN "FPU_Multiplication_Function")
-(DATE "Fri May  6 05:37:52 2016")
-(VENDOR "XILINX")
-(PROGRAM "Vivado")
-(VERSION "2015.4")
-(DIVIDER /)
-(TIMESCALE 1ps)
